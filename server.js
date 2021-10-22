@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const { default: app } = require("./Server/Config/app");
 /**
  * Module dependencies.
  */
@@ -80,4 +81,5 @@
          : 'port ' + addr.port;
      (0, debug_1.default)('Listening on ' + bind);
  }
+
  //# sourceMappingURL=server.js.map
