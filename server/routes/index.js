@@ -36,5 +36,4 @@ router.post('/register', indexController.processRegisterPage);
 /* GET to perform UserLogout */
 router.get('/logout', indexController.performLogout);
 
-
 module.exports = router;

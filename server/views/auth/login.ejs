@@ -14,21 +14,28 @@
         <div class="offset-md-4 col-md-4">
             <h1 class="text-info">Please Login</h1>
             <form method="POST" autocomplete="off">
-                <fieldset class="form-group">
-                    <label class= "text-light" for="username">Username: </label>
-                    <input type="text" class="form-control"
-                    name="username" placeholder="Enter username"
-                    id="username" required autofocus>
-                </fieldset>
+                <div class="form-group">
+                    <div class="input-group mb-1">
+                        <span class="input-group-addon">
+                        <i class="fas fa-user-circle fa-3x mr-1 mb-1" style="color:darkcyan">
+                        </i>
+                        </span>
+                        <input type="text" class="form-control" id="username" name="username"  required
+                        value="" placeholder="Enter your username">
+                    </div>
+                </div>
 
-                <fieldset class="text-white form-group">
-                    <label class= "text-light" for="password">Password: </label>
-                    <input type="password" class="form-control"
-                    name="password" placeholder="Enter password"
-                    id="password" required>
-                    or
-                    <a class="btn blue btn-outline-info ml-4 mt-4" href="/register">Register Here</a>
-                </fieldset>
+                <div class="form-group">
+                    <div class="input-group mb-2">
+                        <span class="input-group-addon">
+                        <i class="fas fa-user-lock fa-2x mr-1 mb-1" style="color: darkcyan;">
+
+                        </i>
+                        </span>
+                        <input type="password" class="form-control" id="password" name="password"  required
+                        value="" placeholder="Enter your password">
+                    </div>
+                </div> 
 
                 <fieldset class="form-group text-right">
                     <input type="submit" class="btn btn-success" value="Login">
@@ -38,6 +45,10 @@
                 </fieldset>
 
             </form>
+            <p class="text-center text-muted small ">
+                Don't have an account? 
+                <a class="text-info" href="/register">Register Here!</a>
+            </p>
         </div>
     </div>
 

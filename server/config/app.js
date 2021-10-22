@@ -84,10 +84,10 @@ app.use((0, connect_flash_1.default)());
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
 // implement an Auth Strategy - "local" - username / password
-passport_1.default.use(user_1.default.createStrategy());
+//passport_1.default.use(user_1.default.createStrategy());
 // serialize and deserialize user data
-passport_1.default.serializeUser(user_1.default.serializeUser());
-passport_1.default.deserializeUser(user_1.default.deserializeUser());
+// passport_1.default.serializeUser(user_1.default.serializeUser());
+// passport_1.default.deserializeUser(user_1.default.deserializeUser());
 app.use('/', index_1.default);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
