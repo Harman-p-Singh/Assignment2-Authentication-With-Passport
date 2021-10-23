@@ -45,7 +45,7 @@ module.exports.displayLoginPage = (req, res, next) => {
     }
     else
     {
-        return res.redirect('/');
+        return res.redirect('/login');
     }
 }
 
@@ -152,7 +152,7 @@ module.exports.processRegisterPage = (req, res, next) => {
             */
 
             return passport.authenticate('local')(req, res, () => {
-                res.redirect('/')
+                res.redirect('/login')
             });
         }
     });
