@@ -91,7 +91,7 @@ module.exports.processLoginPage = (req, res, next) => {
             }, token: authToken});
             
 
-            return res.redirect('/home');
+            return res.redirect('/contact-list');
         });
     })(req, res, next);
 }
@@ -147,9 +147,9 @@ module.exports.processRegisterPage = (req, res, next) => {
 
             // redirect the user and authenticate them
 
-            /* TODO - Getting Ready to convert to API
+            // TODO - Getting Ready to convert to API
             res.json({success: true, msg: 'User Registered Successfully!'});
-            */
+            
 
             return passport.authenticate('local')(req, res, () => {
                 res.redirect('/login')
@@ -162,3 +162,4 @@ module.exports.performLogout = (req, res, next) => {
     req.logout();
     res.redirect('/');
 }
+

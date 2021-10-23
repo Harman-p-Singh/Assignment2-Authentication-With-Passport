@@ -1,7 +1,9 @@
 let express = require('express');
+const { displayContactslist } = require('../controllers/contacts');
 let router = express.Router();
 
 let indexController = require('../controllers/index');
+const contacts = require('../models/contacts');
 
 /* GET home page. */
 router.get('/', indexController.displayHomePage);
@@ -35,5 +37,6 @@ router.post('/register', indexController.processRegisterPage);
 
 /* GET to perform UserLogout */
 router.get('/logout', indexController.performLogout);
+
 
 module.exports = router;
