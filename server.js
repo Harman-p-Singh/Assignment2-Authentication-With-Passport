@@ -11,7 +11,7 @@ const { default: app } = require("./Server/Config/app");
  Object.defineProperty(exports, "__esModule", { value: true });
  const app_1 = __importDefault(require("./Server/Config/app"));
  const debug_1 = __importDefault(require("debug"));
- (0, debug_1.default)('week-4:server');
+ (0, debug_1.default)('assignment-2:server');
  const http_1 = __importDefault(require("http"));
 
 /**
