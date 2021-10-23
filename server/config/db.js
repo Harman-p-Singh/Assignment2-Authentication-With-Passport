@@ -12,4 +12,4 @@ exports.Secret = "someSecret";
 //     "URI": "mongodb+srv://thomas:Hq3DKYN2NaAqGyyV@mongodbserver.k15hk.azure.mongodb.net/book_store?retryWrites=true&w=majority",
 //     "Secret": 'SomeSecret'
 // }
-//# sourceMappingURL=db.js.map
+// //# sourceMappingURL=db.js.map
